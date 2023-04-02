@@ -18,7 +18,7 @@ import {
 
 
 function App(props) {
-  const[dm,colour]=useState(false);
+  const[dm,colour]=useState(true);
   const[alert,setAlert]=useState(null);
   
   const showAlert=(msg,ty)=>{
