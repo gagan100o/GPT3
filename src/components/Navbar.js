@@ -16,13 +16,13 @@ export default function Navbar(props) {
     <div className="collapse navbar-collapse  justify-content-center" id="navbarNav">
       <ul className="navbar-nav  "  >
         <li className="nav-item" >
-          <NavLink className="nav-link   mx-5"  aria-current="page" to="/" style={{ color:'white' , fontWeight:600}}>About</NavLink>
+          <NavLink className="nav-link   mx-5"  id="a1" aria-current="page" to="/" style={{ color:'white' , fontWeight:600}}>About</NavLink>
         </li>
         <li className="nav-item"  >
-          <NavLink className="nav-link mx-5 " style={{ color:'white' , fontWeight:600}} to="/work" >Work</NavLink>
+          <NavLink className="nav-link mx-5 " id="b1" style={{ color:'white' , fontWeight:600}} to="/work" >Work</NavLink>
         </li>
         <li className="nav-item" >
-          <NavLink className="nav-link mx-5"  style={{ color:'white' , fontWeight:600}} to="/Contect">Contect</NavLink>
+          <NavLink className="nav-link mx-5" id="c1"  style={{ color:'white' , fontWeight:600}} to="/Contect">Contect</NavLink>
         </li>
       </ul>
     </div>

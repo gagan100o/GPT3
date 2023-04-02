@@ -1,10 +1,10 @@
 // import React from 'react'
 import React, { useState } from 'react';
+import { useSpeechSynthesis as speech } from 'react-speech-kit';
 
 export default function Container(props) {
 
 const [count, text] = useState(``);
-
 const uppercase=()=>{
  let newText=count.toLocaleUpperCase();
  text(newText);
@@ -20,6 +20,12 @@ const lowercase=()=>{
    const clearcase=()=>{
     let newText="";
     text(newText);
+   }
+const{speak}=speech();
+
+
+   const listen=()=>{
+ speak({text:count})
    }
   
   return (
@@ -38,7 +44,8 @@ const lowercase=()=>{
             <button type="button"  className={`btn btn-outline-${props.mode===true?'danger':'light'} mx-2`} onClick={uppercase}>UpperCase  </button>
             <button type="button"   className={`btn btn-outline-${props.mode===true?'success':'light'} mx-2`} onClick={lowercase}>LowerCase</button>
             <button type="button"  className={`btn btn-outline-${props.mode===true?'dark':'light'} mx-2`} onClick={clearcase}>Clear</button>
-
+            <button type="button"  className={`btn btn-outline-${props.mode===true?'dark':'success'} mx-2`} onClick={listen}>Listen</button>
+            
 
 
 
