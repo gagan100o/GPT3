@@ -12,7 +12,7 @@ import Work1 from './components/Work1.js'
 import {
 //    BrowserRouter as Router,
   Routes,
-  Route,
+  Route,  
 //   Link
 } from "react-router-dom";
 
@@ -57,13 +57,13 @@ function App(props) {
    <Alert alert={alert}></Alert>
      */}
    <Routes>
-    <Route path="/" element={<About></About>}></Route>
+    <Route path="/" element={<About  mode={dm} ></About>}></Route>
     <Route  path="/work" element={ <Work></Work>}>
-       <Route path='Work1' element={<Work1></Work1>}></Route>
+       <Route path='Work1' element={<Work1 mode={dm}></Work1>}></Route>
        <Route path='P1' element={<P1></P1>}></Route>
        
     </Route>
-    <Route path="/contect" element={<Contacts></Contacts>}></Route>
+    <Route path="/contect" element={<Contacts mode={dm}></Contacts>}></Route>
    </Routes>
    {/* <Contacts mode={dm}></Contacts> */}
    </>
