@@ -6,7 +6,7 @@ import logo from "../../assets/logo.svg";
 const Menu = () => (
   <>
     <p>
-      <a href="#home">Home</a>
+      <a href="#home">Home gs</a>
     </p>
     <p>
       <a href="#wgpt3">What is GPT</a>
